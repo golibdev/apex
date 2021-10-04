@@ -43,7 +43,7 @@ body {
 
 .main-header {
     padding-top: 32px;
-    transition: fixed 0.5s;
+    transition: fixed 1s;
 }
 
 .main-header.active {
