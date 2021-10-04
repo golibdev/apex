@@ -3,6 +3,7 @@ const nav = document.querySelector('.main-header__navbar')
 const brand = document.querySelector('.main-header__brand img')
 const navLinks = document.querySelectorAll('.main-header__navbar-link')
 const mainBrandText = document.querySelector('.main-header__brand-text')
+const mainHeader = document.querySelector('.main-header')
 
 burger.style.background = '#00445b'
 mainBrandText.style.color = 'black' 
@@ -61,5 +62,11 @@ window.addEventListener('scroll', () => {
         brand.style.filter = 'invert(0)'
         mainBrandText.style.color = 'black'
         burger.classList.remove('toggle')
+    }
+
+    if(window.pageYOffset >= 100) {
+        mainHeader.classList.add('active')
+    } else {
+        mainHeader.classList.remove('active')
     }
 })

@@ -45,6 +45,17 @@ body {
     padding-top: 32px;
 }
 
+.main-header.active {
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    padding-bottom: 20px;
+    background-color: #c3e9ff;
+}
+
+
 .main-header .main-header__container {
     display: flex;
     align-items: center;
@@ -58,6 +69,8 @@ body {
 }
 
 .main-header .main-header__brand img {
+    width: 80px;
+    height: 80px;
     margin-right: 1rem;
     transition: filter 0.5s;
 }
@@ -601,6 +614,7 @@ body {
         align-items: center;
     }
 
+
     .hero .hero-info .hero-info__about,
     .hero .hero-info .hero-info__title {
         width: 100%;
@@ -616,7 +630,7 @@ body {
     }
 
     .main-header .main-header__navbar {
-        position: absolute;
+        position: fixed;
         width: 100vw;
         height: 100vh;
         background: rgba(0, 68, 91, 1);
@@ -633,8 +647,8 @@ body {
     }
 
     .main-header .main-header__brand {
-        position: relative;
-        z-index: 9999;
+        z-index: 1000;
+        margin-right: 30px;
     }
 
     .main-header .main-header__navbar .main-header__navbar-link {
@@ -649,7 +663,7 @@ body {
     }
 
     .main-header .main-header__navbar .main-header__navbar-link:first-child {
-        margin-top: 140px;
+        margin-top: 100px;
     }
 
     #burger {
@@ -657,7 +671,6 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
-        position: relative;
         z-index: 999;
     }
 
