@@ -22,9 +22,9 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1226px;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 1266px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin: 0 auto;
 }
 
@@ -54,9 +54,8 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #c3e9ff;
-    transition: all 1s ease;
+    transition: all 1s ease-out;
 }
-
 
 .main-header .main-header__container {
     display: flex;
@@ -146,16 +145,24 @@ body {
     line-height: 29px;
     margin-bottom: 60px;
 }
-
-.hero .hero-info .hero-info__btn {
+ 
+.hero-info__btn {
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
     padding: 25px 48px 23px 48px;
     background: #00445B;
     color: #fff;
-    text-decoration: none;
     text-transform: uppercase;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.hero .hero-info .hero-info__btn:hover {
+    background: #ECFEFA;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    color: #000;
 }
 
 .hero .hero-info__image img {
@@ -163,6 +170,7 @@ body {
     flex-direction: column-reverse;
     position: relative;
     width: 100%;
+    height: 578px;
 }
 
 .hero .hero-info__image .filter {
@@ -174,6 +182,76 @@ body {
     filter: blur(25px);
     bottom: -40px;
     right: 200px;
+}
+
+/* modal styles start */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ECFEFA;
+    z-index: 10;
+    transition: display 1s ease-in;
+}
+
+
+.modal .modal-header {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #00445b;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.modal .modal-header .close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.modal .modal-header img {
+    margin-right: 20px;
+    filter: invert(1);
+}
+
+.modal .modal-body {
+    padding: 50px 100px;
+    letter-spacing: 0.02rem;
+    text-align: center;
+}
+
+.modal .modal-body .modal-body__title {
+    font-weight: 500;
+    font-size: 40px;
+    margin: 70px 40px 40px 40px;
+}
+
+.modal .modal-body .modal-body__form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal .modal-body .modal-body__form-group input {
+    display: block;
+    margin-bottom: 40px;
+    padding: 15px 170px 15px 15px;
+    outline: none;
+    border: none;
+    border: 0.5px solid #646464;
+}
+
+.modal .modal-body .hero-info__btn {
+    padding: 25px 48px 23px 48px;
 }
 
 /* Hero section styles end */
@@ -262,7 +340,6 @@ body {
     color: #fff;
     font-size: 14px;
     font-weight: 700;
-    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -637,12 +714,10 @@ body {
         background: rgba(0, 68, 91, 1);
         top: 0;
         bottom: 0;
-        right: 0;
-        left: -100%;
+        left: -110%;
         transition: left 0.5s ;
         z-index: 999;
         padding-top: 30px;
-        overflow-y: auto;
     }
 
     .main-header .main-header__navbar.show {
@@ -757,6 +832,42 @@ body {
     .hero .hero-info .hero-info__about {
         font-size: 18px;
         line-height: 18px;
+    }
+
+    .modal {
+        width: 90%;
+    }
+
+    .modal .modal-body {
+        padding: 50px 0 50px 0;
+    }
+    
+    .modal .modal-header img {
+        width: 60px;
+    }
+
+    .modal .modal-header h3 {
+        font-size: 18px;
+    }
+
+    .modal .modal-body .modal-body__title {
+        font-size: 18px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .modal .modal-body .modal-body__form-group input {
+        display: block;
+        padding: 10px 50px 10px 10px;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    
+    .modal .modal-body .hero-info__btn {
+        padding: 10px 45px;
+        font-size: 10px;
     }
 
     .news .news-cards,
