@@ -637,6 +637,7 @@ body {
         background: rgba(0, 68, 91, 1);
         top: 0;
         bottom: 0;
+        right: 0;
         left: -100%;
         transition: left 0.5s ;
         z-index: 999;
