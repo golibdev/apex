@@ -52,7 +52,7 @@ body {
     right: 0;
     width: 100%;
     z-index: 999;
-    padding-bottom: 30px;
+    padding-top: 0;
     background-color: #c3e9ff;
 }
 
