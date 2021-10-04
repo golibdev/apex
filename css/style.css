@@ -43,15 +43,16 @@ body {
 
 .main-header {
     padding-top: 32px;
+    transition: fixed 0.5s;
 }
 
 .main-header.active {
     position: fixed;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     right: 0;
     width: 100%;
     z-index: 999;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     background-color: #c3e9ff;
 }
 
