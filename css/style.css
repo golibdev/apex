@@ -645,7 +645,7 @@ body {
     }
 
     .main-header .main-header__navbar.show {
-        left: 10%;
+        left: 0;
     }
 
     .main-header .main-header__brand {
