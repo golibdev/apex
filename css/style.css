@@ -163,7 +163,6 @@ body {
     flex-direction: column-reverse;
     position: relative;
     width: 100%;
-    height: 578px;
 }
 
 .hero .hero-info__image .filter {
