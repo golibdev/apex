@@ -52,7 +52,8 @@ body {
     right: 0;
     width: 100%;
     z-index: 999;
-    padding-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #c3e9ff;
 }
 
