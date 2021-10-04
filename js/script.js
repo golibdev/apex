@@ -64,7 +64,7 @@ window.addEventListener('scroll', () => {
         burger.classList.remove('toggle')
     }
 
-    if(window.pageYOffset >= 300) {
+    if(window.pageYOffset >= 200) {
         mainHeader.classList.add('active')
     } else {
         mainHeader.classList.remove('active')
