@@ -4,7 +4,7 @@ const brand = document.querySelector('.main-header__brand img')
 const navLinks = document.querySelectorAll('.main-header__navbar-link')
 const mainBrandText = document.querySelector('.main-header__brand-text')
 
-
+burger.style.background = '#00445b'
 mainBrandText.style.color = 'black' 
 brand.style.filter = 'invert(0)'
 
@@ -12,9 +12,9 @@ const line1 = document.querySelector('.line1')
 const line2 = document.querySelector('.line2')
 const line3 = document.querySelector('.line3')
 
-line1.style.background = 'black'
-line2.style.background = 'black'
-line3.style.background = 'black'
+line1.style.background = 'white'
+line2.style.background = 'white'
+line3.style.background = 'white'
 
 
 burger.addEventListener('click', () => {
@@ -23,28 +23,29 @@ burger.addEventListener('click', () => {
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             nav.classList.remove('show')
-
+            brand.style.filter = 'invert(0)'
+            mainBrandText.style.color = 'black'
             line1.style.background = 'black'
             line2.style.background = 'black'
             line3.style.background = 'black'
-            brand.style.filter = 'invert(0)'
-            mainBrandText.style.color = 'black'
             burger.classList.remove('toggle')
         })
     })
 
-    if(line1.style.background === 'black' && line1.style.background === 'black' && line2.style.background === 'black' && mainBrandText.style.color === 'black' && brand.style.filter === 'invert(0)') {
-        line1.style.background = 'white'
-        line2.style.background = 'white'
-        line3.style.background = 'white'
+    if(line1.style.background === 'white' && line2.style.background === 'white' && line3.style.background === 'white' && mainBrandText.style.color === 'black' && brand.style.filter === 'invert(0)') {
         mainBrandText.style.color = 'white' 
         brand.style.filter = 'invert(1)'
-    } else {
         line1.style.background = 'black'
         line2.style.background = 'black'
         line3.style.background = 'black'
+        burger.style.background = 'white'
+    } else {
+        line1.style.background = 'white'
+        line2.style.background = 'white'
+        line3.style.background = 'white'
         mainBrandText.style.color = 'black' 
         brand.style.filter = 'invert(0)'
+        burger.style.background = '#00445b'
     }
 
     burger.classList.toggle('toggle')
@@ -53,9 +54,10 @@ burger.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
     if(window.pageYOffset >= 50) {
         nav.classList.remove('show')
-        line1.style.background = 'black'
-        line2.style.background = 'black'
-        line3.style.background = 'black'
+        line1.style.background = 'white'
+        line2.style.background = 'white'
+        line3.style.background = 'white'
+        burger.style.background = '#00445b'
         brand.style.filter = 'invert(0)'
         mainBrandText.style.color = 'black'
         burger.classList.remove('toggle')

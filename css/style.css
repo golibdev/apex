@@ -87,13 +87,14 @@ body {
 #burger {
     display: none;
     text-align: center;
+    padding: 12px 10px;
+    border-radius: 50%;
 }
 
 #burger div {
-    width: 25px;
+    width: 23px;
     height: 3px;
     margin-bottom: 5px;
-    /* background: #000; */
     transition: all 0.5s linear;
 } 
 
@@ -616,11 +617,12 @@ body {
 
     .main-header .main-header__navbar {
         position: absolute;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         background: rgba(0, 68, 91, 1);
         top: 0;
-        left: -100%;
+        bottom: 0;
+        left: -110%;
         transition: left 0.5s ;
         z-index: 999;
         padding-top: 30px;
