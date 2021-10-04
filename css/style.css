@@ -641,10 +641,11 @@ body {
         transition: left 0.5s ;
         z-index: 999;
         padding-top: 30px;
+        overflow-y: auto;
     }
 
     .main-header .main-header__navbar.show {
-        left: 0;
+        left: 10%;
     }
 
     .main-header .main-header__brand {
@@ -661,7 +662,6 @@ body {
         position: relative;
         z-index: 99;
         margin-left: 50px;
-        overflow-y: auto;
     }
 
     .main-header .main-header__navbar .main-header__navbar-link:first-child {
