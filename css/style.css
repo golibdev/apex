@@ -55,6 +55,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #c3e9ff;
+    transition: all 0.5s ease;
 }
 
 
