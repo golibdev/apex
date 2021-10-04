@@ -156,6 +156,7 @@ body {
     text-transform: uppercase;
     transition: all 0.5s ease;
     cursor: pointer;
+    border: none;
 }
 
 .hero .hero-info .hero-info__btn:hover {
@@ -341,6 +342,7 @@ body {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+    border: none;
 }
 
 /* Courses section styles end */
