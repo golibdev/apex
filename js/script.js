@@ -4,6 +4,19 @@ const brand = document.querySelector('.main-header__brand img')
 const navLinks = document.querySelectorAll('.main-header__navbar-link')
 const mainBrandText = document.querySelector('.main-header__brand-text')
 const mainHeader = document.querySelector('.main-header')
+const modal = document.querySelector('.modal')
+const btns = document.querySelectorAll('.btn')
+const closeBtn = document.querySelector('.close-btn')
+
+btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        modal.style.display = 'block'
+    })
+})
+
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none'
+})
 
 burger.style.background = '#00445b'
 mainBrandText.style.color = 'black' 
@@ -62,9 +75,10 @@ window.addEventListener('scroll', () => {
         brand.style.filter = 'invert(0)'
         mainBrandText.style.color = 'black'
         burger.classList.remove('toggle')
+        modal.style.display = 'none'
     }
 
-    if(window.pageYOffset >= 300) {
+    if(window.pageYOffset >= 200) {
         mainHeader.classList.add('active')
     } else {
         mainHeader.classList.remove('active')
