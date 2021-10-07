@@ -67,6 +67,10 @@ body {
     background-color: #c3e9ff;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     transition: background 0.5s ease-in-out;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #c3e9ff;
+    transition: all 1s ease-out;
 }
 
 .main-header .main-header__container {
@@ -162,6 +166,7 @@ body {
 }
  
 .hero-info__btn {
+    display: inline-block;
     font-size: 14px;
     font-weight: 700;
     padding: 25px 48px 23px 48px;
@@ -171,6 +176,13 @@ body {
     transition: all 0.5s ease;
     cursor: pointer;
     border: none;
+}
+
+.hero .hero-info .hero-info__btn:hover {
+    background: #ECFEFA;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    color: #000;
 }
 
 .hero .hero-info__image img {
@@ -200,6 +212,8 @@ body {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     background-color: #ECFEFA;
     z-index: 9999;
+    z-index: 10;
+    transition: display 1s ease-in;
 }
 
 
@@ -239,6 +253,7 @@ body {
     font-weight: 500;
     font-size: 40px;
     margin: 70px 0 30px 0;
+    margin: 70px 40px 40px 40px;
 }
 
 .modal .modal-body .modal-body__form-group {
@@ -336,14 +351,6 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     border: none;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background: #ECFEFA;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    color: #000;
 }
 
 /* Courses section styles end */
@@ -757,7 +764,43 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+    .modal {
+        width: 90%;
+    }
 
+    .modal .modal-body {
+        padding: 50px 0 50px 0;
+    }
+    
+    .modal .modal-header img {
+        width: 60px;
+    }
+
+    .modal .modal-header h3 {
+        font-size: 18px;
+    }
+
+    .modal .modal-body .modal-body__title {
+        font-size: 18px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .modal .modal-body .modal-body__form-group input {
+        display: block;
+        padding: 10px 50px 10px 10px;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    
+    .modal .modal-body .hero-info__btn {
+        padding: 10px 45px;
+        font-size: 10px;
+    }
+
+    .news .news-cards,
     .photos .photos-around,
     .contacts .contacts-info {
         grid-template-columns: 100%;
