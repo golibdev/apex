@@ -10,6 +10,7 @@
     <!-- Font awesome links start -->
     <!-- Custom css start -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <!-- Custom css end -->
     <title>APEX TA’LIM - Talaba bo‘lishingizga albatta ishonamiz</title>
 </head>
@@ -57,7 +58,6 @@
             </div>
             <div class="hero-info__image">
                 <img src="./images/bg.png" alt="bg">
-                <div class="filter"></div>
             </div>
         </div>
     </section>
@@ -91,27 +91,57 @@
             <h2 class="section-title">
                 Yangiliklar
             </h2>
-            <div class="news-cards">
-                <div class="news-cards__item">
-                    <img src="./images/news1.png" alt="news">
-                    <h3 class="news-cards__item-title">Mental arifmetikani oson o‘rganamiz</h3>
-                    <p class="news-cards__item-date">
-                        22.09.2021
-                    </p>
+            <div class="news-cards splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="news-cards__item splide__slide">
+                            <img src="./images/news1.png" alt="news">
+                            <h3 class="news-cards__item-title">Mental arifmetikani oson o‘rganamiz</h3>
+                            <p class="news-cards__item-date">
+                                22.09.2021
+                            </p>
+                        </div>
+                        <div class="news-cards__item splide__slide">
+                            <img src="./images/news2.png" alt="news">
+                            <h3 class="news-cards__item-title">IELTS imtihoni haqida</h3>
+                            <p class="news-cards__item-date">
+                                20.09.2021
+                            </p>
+                        </div>
+                        <div class="news-cards__item splide__slide">
+                            <img src="./images/news3.png" alt="news">
+                            <h3 class="news-cards__item-title">Ingliz tilini bilish zamon talabi</h3>
+                            <p class="news-cards__item-date">
+                                12.09.2021
+                            </p>
+                        </div>
+                        <div class="news-cards__item splide__slide">
+                            <img src="./images/news1.png" alt="news">
+                            <h3 class="news-cards__item-title">Mental arifmetikani oson o‘rganamiz</h3>
+                            <p class="news-cards__item-date">
+                                22.09.2021
+                            </p>
+                        </div>
+                        <div class="news-cards__item splide__slide">
+                            <img src="./images/news2.png" alt="news">
+                            <h3 class="news-cards__item-title">IELTS imtihoni haqida</h3>
+                            <p class="news-cards__item-date">
+                                20.09.2021
+                            </p>
+                        </div>
+                        <div class="news-cards__item splide__slide">
+                            <img src="./images/news3.png" alt="news">
+                            <h3 class="news-cards__item-title">Ingliz tilini bilish zamon talabi</h3>
+                            <p class="news-cards__item-date">
+                                12.09.2021
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="news-cards__item">
-                    <img src="./images/news2.png" alt="news">
-                    <h3 class="news-cards__item-title">IELTS imtihoni haqida</h3>
-                    <p class="news-cards__item-date">
-                        20.09.2021
-                    </p>
-                </div>
-                <div class="news-cards__item">
-                    <img src="./images/news3.png" alt="news">
-                    <h3 class="news-cards__item-title">Ingliz tilini bilish zamon talabi</h3>
-                    <p class="news-cards__item-date">
-                        12.09.2021
-                    </p>
+
+                <div class="splide__progress">
+                    <div class="splide__progress__bar">
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,53 +152,105 @@
     <section class="courses" id="courses">
         <div class="container">
             <h2 class="section-title">Kurslar</h2>
-            <div class="courses-cards">
-                <div class="courses-cards__item">
-                    <div class="courses-cards__image">
-                        <img src="./images/math.png" alt="matematika">
-                    </div>
-                    <div class="courses-cards__body">
-                        <h3 class="courses-cards__body-title">
-                            Matematika
-                        </h3>
-                        <p class="courses-cards__body-text">
-                            Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
-                        </p>
-                    </div>
-                    <div class="courses-cards__btn-around">
-                        <button class="courses-cards__btn btn">kursga yozilish</button>
-                    </div>
-                </div>
-                <div class="courses-cards__item">
-                    <div class="courses-cards__image">
-                        <img src="./images/phy.png" alt="matematika">
-                    </div>
-                    <div class="courses-cards__body">
-                        <h3 class="courses-cards__body-title">
-                            Fizika
-                        </h3>
-                        <p class="courses-cards__body-text">
-                            Fizika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
-                        </p>
-                    </div>
-                    <div class="courses-cards__btn-around">
-                        <button class="courses-cards__btn btn">kursga yozilish</button>
-                    </div>
-                </div>
-                <div class="courses-cards__item">
-                    <div class="courses-cards__image">
-                        <img src="./images/english.png" alt="matematika">
-                    </div>
-                    <div class="courses-cards__body">
-                        <h3 class="courses-cards__body-title">
-                            Ingliz tili
-                        </h3>
-                        <p class="courses-cards__body-text">
-                            Ingliz tili fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
-                        </p>
-                    </div>
-                    <div class="courses-cards__btn-around">
-                        <button class="courses-cards__btn btn">kursga yozilish</button>
+            <div class="courses-cards splide splides">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="courses-cards__item splide__slide">
+                            <div class="courses-cards__image">
+                                <img src="./images/math.png" alt="matematika">
+                            </div>
+                            <div class="courses-cards__body">
+                                <h3 class="courses-cards__body-title">
+                                    Matematika
+                                </h3>
+                                <p class="courses-cards__body-text">
+                                    Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+                            <div class="courses-cards__btn-around">
+                                <button class="courses-cards__btn btn">kursga yozilish</button>
+                            </div>
+                        </div>
+                        <div class="courses-cards__item splide__slide">
+                            <div class="courses-cards__image">
+                                <img src="./images/phy.png" alt="matematika">
+                            </div>
+                            <div class="courses-cards__body">
+                                <h3 class="courses-cards__body-title">
+                                    Fizika
+                                </h3>
+                                <p class="courses-cards__body-text">
+                                    Fizika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+                            <div class="courses-cards__btn-around">
+                                <button class="courses-cards__btn btn">kursga yozilish</button>
+                            </div>
+                        </div>
+                        <div class="courses-cards__item splide__slide">
+                            <div class="courses-cards__image">
+                                <img src="./images/english.png" alt="matematika">
+                            </div>
+                            <div class="courses-cards__body">
+                                <h3 class="courses-cards__body-title">
+                                    Ingliz tili
+                                </h3>
+                                <p class="courses-cards__body-text">
+                                    Ingliz tili fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+                            <div class="courses-cards__btn-around">
+                                <button class="courses-cards__btn btn">kursga yozilish</button>
+                            </div>
+                        </div>
+                        <div class="courses-cards__item splide__slide">
+                            <div class="courses-cards__image">
+                                <img src="./images/math.png" alt="matematika">
+                            </div>
+                            <div class="courses-cards__body">
+                                <h3 class="courses-cards__body-title">
+                                    Matematika
+                                </h3>
+                                <p class="courses-cards__body-text">
+                                    Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+                            <div class="courses-cards__btn-around">
+                                <button class="courses-cards__btn btn">kursga yozilish</button>
+                            </div>
+                        </div>
+                        <div class="courses-cards__item splide__slide">
+                            <div class="courses-cards__image">
+                                <img src="./images/phy.png" alt="matematika">
+                            </div>
+                            <div class="courses-cards__body">
+                                <h3 class="courses-cards__body-title">
+                                    Fizika
+                                </h3>
+                                <p class="courses-cards__body-text">
+                                    Fizika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+                            <div class="courses-cards__btn-around">
+                                <button class="courses-cards__btn btn">kursga yozilish</button>
+                            </div>
+                        </div>
+                        <div class="courses-cards__item splide__slide">
+                            <div class="courses-cards__image">
+                                <img src="./images/english.png" alt="matematika">
+                            </div>
+                            <div class="courses-cards__body">
+                                <h3 class="courses-cards__body-title">
+                                    Ingliz tili
+                                </h3>
+                                <p class="courses-cards__body-text">
+                                    Ingliz tili fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+                            <div class="courses-cards__btn-around">
+                                <button class="courses-cards__btn btn">kursga yozilish</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,55 +263,110 @@
         <div class="container">
             <h2 class="section-title">Ustozlar</h2>
 
-            <div class="teachers-cards">
-                <div class="teachers-cards__item">
-                    <div class="teachers-cards__image">
-                        <img src="./images/teacher1.png" alt="teacher">
-                    </div>
-                    <div class="teachers-cards__body">
-                        <h3 class="teachers-cards__body-title">
-                            Asadov Qodir
-                        </h3>
-                        <div class="teachers-cards__body-info">
-                            <p class="position">Matematika fani o‘qituvchisi</p>
-                            <p class="exprience">Ish tajribasi: 8 yil</p>
-                            <p class="students-number">
-                                O‘qitgan talabalari soni: 500+
-                            </p>
+            <div class="teachers-cards splide splide-teacher">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="teachers-cards__item splide__slide">
+                            <div class="teachers-cards__image">
+                                <img src="./images/teacher1.png" alt="teacher">
+                            </div>
+                            <div class="teachers-cards__body">
+                                <h3 class="teachers-cards__body-title">
+                                    Asadov Qodir
+                                </h3>
+                                <div class="teachers-cards__body-info">
+                                    <p class="position">Matematika fani o‘qituvchisi</p>
+                                    <p class="exprience">Ish tajribasi: 8 yil</p>
+                                    <p class="students-number">
+                                        O‘qitgan talabalari soni: 500+
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="teachers-cards__item">
-                    <div class="teachers-cards__image">
-                        <img src="./images/teacher2.png" alt="teacher">
-                    </div>
-                    <div class="teachers-cards__body">
-                        <h3 class="teachers-cards__body-title">
-                            Ergashev Jasur
-                        </h3>
-                        <div class="teachers-cards__body-info">
-                            <p class="position">Fizika fani o‘qituvchisi</p>
-                            <p class="exprience">Ish tajribasi: 5 yil</p>
-                            <p class="students-number">
-                                O‘qitgan talabalari soni: 400+
-                            </p>
+                        <div class="teachers-cards__item splide__slide">
+                            <div class="teachers-cards__image">
+                                <img src="./images/teacher2.png" alt="teacher">
+                            </div>
+                            <div class="teachers-cards__body">
+                                <h3 class="teachers-cards__body-title">
+                                    Ergashev Jasur
+                                </h3>
+                                <div class="teachers-cards__body-info">
+                                    <p class="position">Fizika fani o‘qituvchisi</p>
+                                    <p class="exprience">Ish tajribasi: 5 yil</p>
+                                    <p class="students-number">
+                                        O‘qitgan talabalari soni: 400+
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="teachers-cards__item">
-                    <div class="teachers-cards__image">
-                        <img src="./images/teacher3.png" alt="teacher">
-                    </div>
-                    <div class="teachers-cards__body">
-                        <h3 class="teachers-cards__body-title">
-                            Murodov Alibek
-                        </h3>
-                        <div class="teachers-cards__body-info">
-                            <p class="position">Ingliz tili fani o‘qituvchisi</p>
-                            <p class="exprience">Ish tajribasi: 4 yil</p>
-                            <p class="students-number">
-                                O‘qitgan talabalari soni: 300+
-                            </p>
+                        <div class="teachers-cards__item splide__slide">
+                            <div class="teachers-cards__image">
+                                <img src="./images/teacher3.png" alt="teacher">
+                            </div>
+                            <div class="teachers-cards__body">
+                                <h3 class="teachers-cards__body-title">
+                                    Murodov Alibek
+                                </h3>
+                                <div class="teachers-cards__body-info">
+                                    <p class="position">Ingliz tili fani o‘qituvchisi</p>
+                                    <p class="exprience">Ish tajribasi: 4 yil</p>
+                                    <p class="students-number">
+                                        O‘qitgan talabalari soni: 300+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teachers-cards__item splide__slide">
+                            <div class="teachers-cards__image">
+                                <img src="./images/teacher1.png" alt="teacher">
+                            </div>
+                            <div class="teachers-cards__body">
+                                <h3 class="teachers-cards__body-title">
+                                    Asadov Qodir
+                                </h3>
+                                <div class="teachers-cards__body-info">
+                                    <p class="position">Matematika fani o‘qituvchisi</p>
+                                    <p class="exprience">Ish tajribasi: 8 yil</p>
+                                    <p class="students-number">
+                                        O‘qitgan talabalari soni: 500+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teachers-cards__item splide__slide">
+                            <div class="teachers-cards__image">
+                                <img src="./images/teacher2.png" alt="teacher">
+                            </div>
+                            <div class="teachers-cards__body">
+                                <h3 class="teachers-cards__body-title">
+                                    Ergashev Jasur
+                                </h3>
+                                <div class="teachers-cards__body-info">
+                                    <p class="position">Fizika fani o‘qituvchisi</p>
+                                    <p class="exprience">Ish tajribasi: 5 yil</p>
+                                    <p class="students-number">
+                                        O‘qitgan talabalari soni: 400+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teachers-cards__item splide__slide">
+                            <div class="teachers-cards__image">
+                                <img src="./images/teacher3.png" alt="teacher">
+                            </div>
+                            <div class="teachers-cards__body">
+                                <h3 class="teachers-cards__body-title">
+                                    Murodov Alibek
+                                </h3>
+                                <div class="teachers-cards__body-info">
+                                    <p class="position">Ingliz tili fani o‘qituvchisi</p>
+                                    <p class="exprience">Ish tajribasi: 4 yil</p>
+                                    <p class="students-number">
+                                        O‘qitgan talabalari soni: 300+
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -245,49 +382,27 @@
 
             <div class="photos-around">
                 <div class="photos-around__item">
-                    <img src="./images/photos1.png" alt="">
+                    <img src="./images/photos1.jpg" alt="">
                 </div>
                 <div class="photos-around__item">
-                    <img src="./images/photos2.png" alt="">
+                    <img src="./images/photos2.jpg" alt="">
                 </div>
                 <div class="photos-around__item">
-                    <img src="./images/photos3.png" alt="">
+                    <img src="./images/photos3.jpg" alt="">
                 </div>
                 <div class="photos-around__item">
-                    <img src="./images/photos4.png" alt="">
+                    <img src="./images/photos4.jpg" alt="">
                 </div>
                 <div class="photos-around__item">
-                    <img src="./images/photos5.png" alt="">
+                    <img src="./images/photos5.jpg" alt="">
                 </div>
                 <div class="photos-around__item">
-                    <img src="./images/photos6.png" alt="">
+                    <img src="./images/photos6.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
     <!-- Photos section end -->
-
-    <!-- Videos section start -->
-    <section class="videos" id="videos">
-        <div class="container">
-            <h2 class="section-title">
-                Darslardan videolavhalar
-            </h2>
-
-            <div class="videos-around">
-                <div class="videos-around__item">
-                    <iframe width="369px" height="273px" src="https://www.youtube.com/embed/CFEQ8KWpEQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="videos-around__item">
-                    <iframe width="369px" height="273px" src="https://www.youtube.com/embed/CFEQ8KWpEQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="videos-around__item">
-                    <iframe width="369px" height="273px" src="https://www.youtube.com/embed/CFEQ8KWpEQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Videos section end -->
 
     <!-- Results section start -->
     <section class="results" id="results">
@@ -295,47 +410,93 @@
             <h2 class="section-title">
                 O’quvchilarimiz natijalari
             </h2>
-            <div class="results-cards">
-                <div class="results-cards__item">
-                    <img src="./images/user1.jpg" alt="user">
-                    <div class="results-cards__body">
-                        <h3 class="results-cards__body-title">
-                            Norboyeva Nodira
-                        </h3>
-                        <p class="university-name">
-                            O‘qishga kirgan oliygoh nomi: Toshkent Davlat Milliy Universiteti
-                        </p>
-                        <p class="period-time">
-                            Abiturientlik davri: 6 oylik tayyorlov kursi
-                        </p>
-                    </div>
-                </div>
-                <div class="results-cards__item">
-                    <img src="./images/user2.jpg" alt="user">
-                    <div class="results-cards__body">
-                        <h3 class="results-cards__body-title">
-                            Mavlonov Abdulla
-                        </h3>
-                        <p class="university-name">
-                            O‘qishga kirgan oliygoh nomi: Toshkent Davlat Yuridik Universiteti
-                        </p>
-                        <p class="period-time">
-                            Abiturientlik davri: 8 oylik tayyorlov kursi
-                        </p>
-                    </div>
-                </div>
-                <div class="results-cards__item">
-                    <img src="./images/user3.jpg" alt="user">
-                    <div class="results-cards__body">
-                        <h3 class="results-cards__body-title">
-                            Yo‘lchiyeva Madina
-                        </h3>
-                        <p class="university-name">
-                            O‘qishga kirgan oliygoh nomi: Toshkent Davlat Nizomiy Universiteti
-                        </p>
-                        <p class="period-time">
-                            Abiturientlik davri: 5 oylik tayyorlov kursi
-                        </p>
+            <div class="results-cards splide splide-results">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="results-cards__item splide__slide">
+                            <img src="./images/user1.jpg" alt="user">
+                            <div class="results-cards__body">
+                                <h3 class="results-cards__body-title">
+                                    Norboyeva Nodira
+                                </h3>
+                                <p class="university-name">
+                                    O‘qishga kirgan oliygoh nomi: Toshkent Davlat Milliy Universiteti
+                                </p>
+                                <p class="period-time">
+                                    Abiturientlik davri: 6 oylik tayyorlov kursi
+                                </p>
+                            </div>
+                        </div>
+                        <div class="results-cards__item splide__slide">
+                            <img src="./images/user2.jpg" alt="user">
+                            <div class="results-cards__body">
+                                <h3 class="results-cards__body-title">
+                                    Mavlonov Abdulla
+                                </h3>
+                                <p class="university-name">
+                                    O‘qishga kirgan oliygoh nomi: Toshkent Davlat Yuridik Universiteti
+                                </p>
+                                <p class="period-time">
+                                    Abiturientlik davri: 8 oylik tayyorlov kursi
+                                </p>
+                            </div>
+                        </div>
+                        <div class="results-cards__item splide__slide">
+                            <img src="./images/user3.jpg" alt="user">
+                            <div class="results-cards__body">
+                                <h3 class="results-cards__body-title">
+                                    Yo‘lchiyeva Madina
+                                </h3>
+                                <p class="university-name">
+                                    O‘qishga kirgan oliygoh nomi: Toshkent Davlat Nizomiy Universiteti
+                                </p>
+                                <p class="period-time">
+                                    Abiturientlik davri: 5 oylik tayyorlov kursi
+                                </p>
+                            </div>
+                        </div>
+                        <div class="results-cards__item splide__slide">
+                            <img src="./images/user1.jpg" alt="user">
+                            <div class="results-cards__body">
+                                <h3 class="results-cards__body-title">
+                                    Norboyeva Nodira
+                                </h3>
+                                <p class="university-name">
+                                    O‘qishga kirgan oliygoh nomi: Toshkent Davlat Milliy Universiteti
+                                </p>
+                                <p class="period-time">
+                                    Abiturientlik davri: 6 oylik tayyorlov kursi
+                                </p>
+                            </div>
+                        </div>
+                        <div class="results-cards__item splide__slide">
+                            <img src="./images/user2.jpg" alt="user">
+                            <div class="results-cards__body">
+                                <h3 class="results-cards__body-title">
+                                    Mavlonov Abdulla
+                                </h3>
+                                <p class="university-name">
+                                    O‘qishga kirgan oliygoh nomi: Toshkent Davlat Yuridik Universiteti
+                                </p>
+                                <p class="period-time">
+                                    Abiturientlik davri: 8 oylik tayyorlov kursi
+                                </p>
+                            </div>
+                        </div>
+                        <div class="results-cards__item splide__slide">
+                            <img src="./images/user3.jpg" alt="user">
+                            <div class="results-cards__body">
+                                <h3 class="results-cards__body-title">
+                                    Yo‘lchiyeva Madina
+                                </h3>
+                                <p class="university-name">
+                                    O‘qishga kirgan oliygoh nomi: Toshkent Davlat Nizomiy Universiteti
+                                </p>
+                                <p class="period-time">
+                                    Abiturientlik davri: 5 oylik tayyorlov kursi
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -350,70 +511,140 @@
                 Mijozlarimiz izohlari
             </h2>
 
-            <div class="comments-cards">
-                <div class="comments-cards__item">
-                    <img src="./images/comments-user1.png" alt="comments">
-                    <div class="comments-cards__body">
-                        <h3 class="comments-cards__user-name">
-                            Karimova Odina
-                        </h3>
-                        <p class="comments-cards__user-position">
-                            TDMI 1-kurs talabasi
-                        </p>
-                        <p class="comments-cards__user-comment">
-                            Men talaba bo’lishimga sababchi bo‘lgan eng zo‘r o‘quv markaz.
-                        </p>
-
-                        <div class="ranks-around">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+            <div class="comments-cards splide splide-comments">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="comments-cards__item splide__slide">
+                            <img src="./images/comments-user1.png" alt="comments">
+                            <div class="comments-cards__body">
+                                <h3 class="comments-cards__user-name">
+                                    Karimova Odina
+                                </h3>
+                                <p class="comments-cards__user-position">
+                                    TDMI 1-kurs talabasi
+                                </p>
+                                <p class="comments-cards__user-comment">
+                                    Men talaba bo’lishimga sababchi bo‘lgan eng zo‘r o‘quv markaz.
+                                </p>
+        
+                                <div class="ranks-around">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="comments-cards__item">
-                    <img src="./images/comments-user2.png" alt="comments">
-                    <div class="comments-cards__body">
-                        <h3 class="comments-cards__user-name">
-                            Azizova Durdona
-                        </h3>
-                        <p class="comments-cards__user-position">
-                            TATU 1-kurs talasi
-                        </p>
-                        <p class="comments-cards__user-comment">
-                            Zamonaviy kasblarni o’rganish uchun qulay o’quv markaz deya tavsiya qilaman
-                        </p>
-
-                        <div class="ranks-around">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        <div class="comments-cards__item splide__slide">
+                            <img src="./images/comments-user2.png" alt="comments">
+                            <div class="comments-cards__body">
+                                <h3 class="comments-cards__user-name">
+                                    Azizova Durdona
+                                </h3>
+                                <p class="comments-cards__user-position">
+                                    TATU 1-kurs talasi
+                                </p>
+                                <p class="comments-cards__user-comment">
+                                    Zamonaviy kasblarni o’rganish uchun qulay o’quv markaz deya tavsiya qilaman
+                                </p>
+        
+                                <div class="ranks-around">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="comments-cards__item">
-                    <img src="./images/comments-user3.png" alt="comments">
-                    <div class="comments-cards__body">
-                        <h3 class="comments-cards__user-name">
-                            Madrahimov Olimjon
-                        </h3>
-                        <p class="comments-cards__user-position">
-                            TDYU 1-kurs talabasi
-                        </p>
-                        <p class="comments-cards__user-comment">
-                            Eng tajribali ustozlar jamosiga ega o‘quv markaz sifatiad tavsiya qilaman.
-                        </p>
-
-                        <div class="ranks-around">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        <div class="comments-cards__item splide__slide">
+                            <img src="./images/comments-user3.png" alt="comments">
+                            <div class="comments-cards__body">
+                                <h3 class="comments-cards__user-name">
+                                    Madrahimov Olimjon
+                                </h3>
+                                <p class="comments-cards__user-position">
+                                    TDYU 1-kurs talabasi
+                                </p>
+                                <p class="comments-cards__user-comment">
+                                    Eng tajribali ustozlar jamosiga ega o‘quv markaz sifatiad tavsiya qilaman.
+                                </p>
+        
+                                <div class="ranks-around">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-cards__item splide__slide">
+                            <img src="./images/comments-user1.png" alt="comments">
+                            <div class="comments-cards__body">
+                                <h3 class="comments-cards__user-name">
+                                    Karimova Odina
+                                </h3>
+                                <p class="comments-cards__user-position">
+                                    TDMI 1-kurs talabasi
+                                </p>
+                                <p class="comments-cards__user-comment">
+                                    Men talaba bo’lishimga sababchi bo‘lgan eng zo‘r o‘quv markaz.
+                                </p>
+        
+                                <div class="ranks-around">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-cards__item splide__slide">
+                            <img src="./images/comments-user2.png" alt="comments">
+                            <div class="comments-cards__body">
+                                <h3 class="comments-cards__user-name">
+                                    Azizova Durdona
+                                </h3>
+                                <p class="comments-cards__user-position">
+                                    TATU 1-kurs talasi
+                                </p>
+                                <p class="comments-cards__user-comment">
+                                    Zamonaviy kasblarni o’rganish uchun qulay o’quv markaz deya tavsiya qilaman
+                                </p>
+        
+                                <div class="ranks-around">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-cards__item splide__slide">
+                            <img src="./images/comments-user3.png" alt="comments">
+                            <div class="comments-cards__body">
+                                <h3 class="comments-cards__user-name">
+                                    Madrahimov Olimjon
+                                </h3>
+                                <p class="comments-cards__user-position">
+                                    TDYU 1-kurs talabasi
+                                </p>
+                                <p class="comments-cards__user-comment">
+                                    Eng tajribali ustozlar jamosiga ega o‘quv markaz sifatiad tavsiya qilaman.
+                                </p>
+        
+                                <div class="ranks-around">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -493,8 +724,10 @@
     </footer>
     <!-- Footer section end -->
 
-     <!-- Script file start -->
-     <script src="./js/script.js"></script>
-     <!-- Script file end -->
+    <!-- Script file start -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="./js/carousel.js"></script>
+    <!-- Script file end -->
 </body>
 </html>
