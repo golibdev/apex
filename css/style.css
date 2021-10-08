@@ -100,6 +100,11 @@ body {
     transition: color 0.5s;
 }
 
+.main-header .main-header__navbar {
+    display: flex;
+    align-items: center;
+}
+
 .main-header .main-header__navbar .main-header__navbar-link {
     color: #000;
     margin-right: 30px;
@@ -108,6 +113,12 @@ body {
     font-weight: 500;
     text-transform: capitalize;
     text-decoration: none;
+}
+
+.main-header .main-header__navbar .active-link,
+.main-header .main-header__navbar .main-header__navbar-link:hover {
+    color: #00445b;
+    font-weight: bold;
 }
 
 .main-header .main-header__navbar .main-header__navbar-link:last-child {
@@ -312,6 +323,7 @@ body {
 
 .courses .courses-cards .courses-cards__item {
     width: 369px!important;
+    height: 100%;
     margin-right: 30px;
     background: #ecfefa;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.13);
@@ -335,7 +347,6 @@ body {
 .courses .courses-cards .courses-cards__body-text {
     font-size: 14px;
     margin-bottom: 20px;
-    width: 100%;
 }
 
 .courses .courses-cards .courses-cards__btn-around {
@@ -697,6 +708,10 @@ body {
         margin-bottom: 50px;
     }
 
+    .main-header .main-header__navbar .main-header__navbar-link:hover {
+        color: #fff;
+    }
+
     .main-header .main-header__navbar .main-header__navbar-link:last-child {
         margin-right: 30px;
     }
@@ -915,7 +930,7 @@ body {
 }
 
 #burger.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-5px, 5px);
 }
 
 #burger.toggle .line2 {
@@ -923,5 +938,5 @@ body {
 }
 
 #burger.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-5px, -5px);
 }
