@@ -2,14 +2,17 @@ new Splide( '.splide' , {
     type   : 'loop',
     perMove: 1,
     focus  : 'center',
-    autoWidth: true
+    autoWidth: true,
+    autoplay: true,
+    rewind: true,
 }).mount();
 
 new Splide( '.splides' , {
     type   : 'loop',
-    perMove: 1,
     focus  : 'center',
     autoWidth: true,
+    autoplay: true,
+    rewind: true,
 }).mount();
 
 new Splide( '.splide-teacher' , {
@@ -17,6 +20,8 @@ new Splide( '.splide-teacher' , {
     perMove: 1,
     focus  : 'center',
     autoWidth: true,
+    autoplay: true,
+    rewind: true,
 }).mount();
 
 new Splide( '.splide-results' , {
@@ -24,6 +29,8 @@ new Splide( '.splide-results' , {
     perMove: 1,
     focus  : 'center',
     autoWidth: true,
+    autoplay: true,
+    rewind: true,
 }).mount();
 
 new Splide( '.splide-comments' , {
@@ -31,4 +38,6 @@ new Splide( '.splide-comments' , {
     perMove: 1,
     focus  : 'center',
     autoWidth: true,
+    autoplay: true,
+    rewind: true,
 }).mount();
