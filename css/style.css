@@ -746,7 +746,6 @@ body {
         margin-right: auto;
     }
 
-    .photos .photos-around,
     .contacts .contacts-info,
     .footer .form-group {
         grid-template-columns: repeat(2, 1fr);
@@ -815,9 +814,12 @@ body {
     }
 
     .news .news-cards,
-    .photos .photos-around,
     .contacts .contacts-info {
         grid-template-columns: 100%;
+    }
+
+    .photos .photos-around {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .btn {
@@ -931,6 +933,11 @@ body {
     .results .results-cards .results-cards__item img {
         width: 90px;
     }
+
+    .photos .photos-around {
+        grid-template-columns: 100%;
+    }
+
 }
 
 #burger.toggle .line1 {
